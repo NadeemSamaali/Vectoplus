@@ -119,9 +119,8 @@ public class App {
             rAngle = 360 - rAngle;
 
         //Printing results
-        System.out.println();
-        System.out.println("# # # Resulting component data # # #");
-        System.out.println("\n> Components : \n  A : " + df.format(Math.abs(sumA)) + "\n  B : " + df.format(Math.abs(sumB)));
+        System.out.println("\n# # # Resulting component data # # #");
+        System.out.println("\n> Components : \n  A : " + df.format(sumA) + "\n  B : " + df.format(sumB));
         System.out.println("> Length = " + df.format(rLength) + " u");
         System.out.println("> Angle = " + df.format(rAngle) + " deg");
         System.out.println();
