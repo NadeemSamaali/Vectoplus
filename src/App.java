@@ -111,11 +111,11 @@ public class App {
             rAngle = Math.abs((Math.atan(sumB/sumA)*180)/Math.PI);
         }
 
-        if(sumA < 0 && sumB > 0 && df.format(rLength) != "0,000")
+        if(sumA < 0 && sumB > 0 && Math.round(rLength) > 0)
             rAngle = 180 - rAngle;
-        if(sumA < 0 && sumB < 0 && df.format(rLength) != "0,000")
+        if(sumA < 0 && sumB < 0 && Math.round(rLength) > 0)
             rAngle = 180 + rAngle;
-        if(sumA > 0 && sumB < 0 && df.format(rLength) != "0,000")
+        if(sumA > 0 && sumB < 0 && Math.round(rLength) > 0)
             rAngle = 360 - rAngle;
 
         //Printing results
