@@ -78,12 +78,12 @@ public class App {
             System.out.println("#Vector " + (i + 1) + " :");
 
             //Setting length of vector
-            System.out.print(".Length :" + ans1);
+            System.out.print(".Length : " + ans1);
             ans1 = input.nextLine();
             vector[i].setLength(Double.parseDouble(ans1));
 
             //Setting angle of vector in radiants
-            System.out.print(".Angle :" + ans2);
+            System.out.print(".Angle : " + ans2);
             ans2 = input.nextLine();
             vector[i].setAngle((Double.parseDouble(ans2)*Math.PI)/180);
         }
@@ -111,11 +111,11 @@ public class App {
             rAngle = Math.abs((Math.atan(sumB/sumA)*180)/Math.PI);
         }
 
-        if(sumA < 0 && sumB > 0 && Math.round(rLength) > 0)
+        if(sumA < 0 && sumB > 0 && df.format(rLength) != "0,000")
             rAngle = 180 - rAngle;
-        if(sumA < 0 && sumB < 0 && Math.round(rLength) > 0)
+        if(sumA < 0 && sumB < 0 && df.format(rLength) != "0,000")
             rAngle = 180 + rAngle;
-        if(sumA > 0 && sumB < 0 && Math.round(rLength) > 0)
+        if(sumA > 0 && sumB < 0 && df.format(rLength) != "0,000")
             rAngle = 360 - rAngle;
 
         //Printing results
