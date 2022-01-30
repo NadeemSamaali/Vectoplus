@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.lang.Math;
 import java.text.DecimalFormat;
 
-public class App {
+public class Vectoplus {
 
     public static class Vector
     {
